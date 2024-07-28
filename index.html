@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الأولى</title>
+</head>
+<body>
+    <p id="number">0</p>
+    <script>
+        // تحقق مما إذا كان هناك رقم جديد مخزن في Local Storage
+        const savedNumber = localStorage.getItem('number');
+        if (savedNumber) {
+            document.getElementById('number').innerText = savedNumber;
+        }
+    </script>
+</body>
+</html>
+    

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الثانية</title>
+</head>
+<body>
+    <input type="number" id="newNumber" placeholder="أدخل الرقم الجديد">
+    <button onclick="updateNumber()">تحديث الرقم</button>
+
+    <script>
+        function updateNumber() {
+            const newNumber = document.getElementById('newNumber').value;
+            localStorage.setItem('number', newNumber);
+            alert('تم تحديث الرقم بنجاح!');
+        }
+    </script>
+</body>
+</html>
